@@ -9,7 +9,6 @@ const {Op}= require('sequelize');
 Actor.create({
     first_name:'Ingnacio',
     last_name:'Rodriguez',
-
 })
 
 router.get('/', async(req, res)=>{
