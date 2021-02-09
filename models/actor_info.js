@@ -1,6 +1,6 @@
 const Sequelize=require('sequelize');
 
-module.exports = class Actor extends Sequelize.Model{
+module.exports = class Actor_info extends Sequelize.Model{
     static init(sequelize){
         return super.init({
             actor_id:{
@@ -17,8 +17,7 @@ module.exports = class Actor extends Sequelize.Model{
             },
             film_info:{
                 type:Sequelize.TEXT,
-                allowNull:false,
-            
+                allowNull:false
             }
 
             //actor_id, first_name, last_name, last_update
@@ -26,8 +25,8 @@ module.exports = class Actor extends Sequelize.Model{
             sequelize,
             timestamps:false,
             underscored:false,
-            modelName:'Actor',
-            tableName:'actor',
+            modelName:'Actor_info',
+            tableName:'actor_info',
             paranoid:false,
             charset:'utf8',
             collate:'utf8_general_ci'
